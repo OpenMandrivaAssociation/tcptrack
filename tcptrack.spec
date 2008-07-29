@@ -1,7 +1,7 @@
 Summary:	A packet sniffer which displays TCP information like the 'top' command
 Name:		tcptrack
 Version:	1.3.0
-Release:	%mkrel 1
+Release:	%mkrel 3
 Group:		Monitoring
 License:	GPLv2+
 URL:		http://www.rhythm.cx/~steve/devel/tcptrack/
