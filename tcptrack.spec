@@ -1,11 +1,12 @@
 Summary:	A packet sniffer which displays TCP information like the 'top' command
 Name:		tcptrack
 Version:	1.3.0
-Release:	%mkrel 4
+Release:	%mkrel 5
 Group:		Monitoring
 License:	GPLv2+
 URL:		http://www.rhythm.cx/~steve/devel/tcptrack/
 Source0:	http://www.rhythm.cx/~steve/devel/tcptrack/release/%{version}/source/%{name}-%{version}.tar.gz
+Patch0:		tcptrack-1.3.0-util.patch
 BuildRequires:	ncurses-devel
 BuildRequires:	pcap-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -20,6 +21,7 @@ addresses and ports, connection state, idle time, and bandwidth usage.
 %prep
 
 %setup -q -n %{name}-%{version}
+%patch0 -p1
 
 %build
 %serverbuild
@@ -41,4 +43,3 @@ rm -rf %{buildroot}
 %doc AUTHORS COPYING ChangeLog README INSTALL NEWS
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}*
-
