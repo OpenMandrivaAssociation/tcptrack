@@ -1,6 +1,6 @@
 Summary:	A packet sniffer which displays TCP information like the 'top' command
 Name:		tcptrack
-Version:	1.4.0
+Version:	1.4.2
 Release:	%mkrel 1
 Group:		Monitoring
 License:	GPLv2+
