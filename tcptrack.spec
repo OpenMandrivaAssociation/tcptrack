@@ -4,7 +4,7 @@ Version:	1.4.2
 Release:	2
 Group:		Monitoring
 License:	GPLv2+
-URL:		http://www.rhythm.cx/~steve/devel/tcptrack/
+URL:		https://www.rhythm.cx/~steve/devel/tcptrack/
 Source0:	http://www.rhythm.cx/~steve/devel/tcptrack/release/%{version}/source/%{name}-%{version}.tar.gz
 BuildRequires:	ncurses-devel
 BuildRequires:	pcap-devel
